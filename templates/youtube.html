@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/youtube.css">
+    <title>VideoFacilito</title>
+</head>
+<body>
+    <h1>Dowload video YouTube</h1>
+    <form action="/" method="post">
+        <label for="url">URL del video</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Dowload</button>
+    </form>
+    {% if mensaje %}
+        <p>{{ mensaje }}</p>
+    {% endif %}
+</body>
+</html>
